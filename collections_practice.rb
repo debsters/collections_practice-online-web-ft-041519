@@ -38,3 +38,19 @@ def find_a(array)
     x.start_with?("a")
   end
 end
+
+def sum_array(array)
+  array.inject do |a, b|
+    a + b
+  end
+end
+
+def add_s(array)
+  array.each_with_index.collect do |x, i|
+    if i == 1
+      x
+    else
+      x << "s"
+    end
+  end
+end
