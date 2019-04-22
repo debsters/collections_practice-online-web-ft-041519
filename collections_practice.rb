@@ -23,3 +23,12 @@ end
 def reverse_array(integers)
   integers.reverse!
 end
+
+def kesha_maker(array)
+  new_array = []
+  array.each do |x|
+    x[2] = "$"
+    new_array << x
+  end
+  new_array
+end
